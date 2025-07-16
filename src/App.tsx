@@ -1,14 +1,17 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
-// import './App.css'
+import "./App.css";
+import mobileBackground from "./assets/images/background-pattern-mobile.svg";
+import iconStar from "./assets/images/icon-star.svg";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      {/* <div>
+      <main>
+        {/* <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -28,42 +31,48 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */}
-      <article>
-        <p>FAQs</p>
 
-        <p>What is Frontend Mentor, and how will it help me?</p>
+        <img src={mobileBackground} alt="" srcSet={mobileBackground} />
+        <article className="overpass-font faq-article">
+          <div>
+            <img src={iconStar} alt="" srcSet={iconStar} />
+            <h1>FAQs</h1>
+          </div>
 
-        <p>
-          Frontend Mentor offers realistic coding challenges to help developers
-          improve their frontend coding skills with projects in HTML, CSS, and
-          JavaScript. It's suitable for all levels and ideal for portfolio
-          building.
-        </p>
+          <p>What is Frontend Mentor, and how will it help me?</p>
 
-        <p>Is Frontend Mentor free?</p>
+          <p>
+            Frontend Mentor offers realistic coding challenges to help
+            developers improve their frontend coding skills with projects in
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for portfolio building.
+          </p>
 
-        <p>
-          Yes, Frontend Mentor offers both free and premium coding challenges,
-          with the free option providing access to a range of projects suitable
-          for all skill levels.
-        </p>
+          <p>Is Frontend Mentor free?</p>
 
-        <p>Can I use Frontend Mentor projects in my portfolio?</p>
+          <p>
+            Yes, Frontend Mentor offers both free and premium coding challenges,
+            with the free option providing access to a range of projects
+            suitable for all skill levels.
+          </p>
 
-        <p>
-          Yes, you can use projects completed on Frontend Mentor in your
-          portfolio. It's an excellent way to showcase your skills to potential
-          employers!
-        </p>
+          <p>Can I use Frontend Mentor projects in my portfolio?</p>
 
-        <p>How can I get help if I'm stuck on a Frontend Mentor challenge?</p>
+          <p>
+            Yes, you can use projects completed on Frontend Mentor in your
+            portfolio. It's an excellent way to showcase your skills to
+            potential employers!
+          </p>
 
-        <p>
-          The best place to get help is inside Frontend Mentor's Discord
-          community. There's a help channel where you can ask questions and seek
-          support from other community members.
-        </p>
-      </article>
+          <p>How can I get help if I'm stuck on a Frontend Mentor challenge?</p>
+
+          <p>
+            The best place to get help is inside Frontend Mentor's Discord
+            community. There's a help channel where you can ask questions and
+            seek support from other community members.
+          </p>
+        </article>
+      </main>
     </>
   );
 }
