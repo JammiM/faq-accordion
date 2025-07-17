@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import mobileBackground from "./assets/images/background-pattern-mobile.svg";
+import desktopBackground from "./assets/images/background-pattern-desktop.svg";
 import iconStar from "./assets/images/icon-star.svg";
 
 function App() {
@@ -32,7 +33,16 @@ function App() {
         Click on the Vite and React logos to learn more
       </p> */}
 
-        <img src={mobileBackground} alt="" srcSet={mobileBackground} />
+        <picture className="mobile-header">
+          <source media="( width >= 650px )" srcSet={desktopBackground} />
+          <source media="( width <= 375px )" srcSet={mobileBackground} />
+          <img
+            src={mobileBackground}
+            alt="mobile background"
+            srcSet={mobileBackground}
+          />
+        </picture>
+
         <article className="overpass-font faq-article">
           <div>
             <img src={iconStar} alt="" srcSet={iconStar} />
