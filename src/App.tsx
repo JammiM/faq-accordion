@@ -14,11 +14,9 @@ function App() {
   return (
     <>
       <main className="faq__main container mx-auto px-4 ">
-        <article className="text-left">
-          <div className="max-w-sm rounded overflow-hidden shadow-lg p-4 mx-auto">
-            <FaqHeader />
-            <FaqAccordion />
-          </div>
+        <article className="max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl border border-amber-400  rounded overflow-hidden shadow-lg p-4 mx-auto   text-left">
+          <FaqHeader />
+          <FaqAccordion />
         </article>
       </main>
     </>
