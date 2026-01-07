@@ -8,16 +8,15 @@ const FaqAccordion = () => {
     <section>
       {faqsObject.map((singleFaq) => {
         return (
-          <div className="mb-2">
-            <div>
-              <h2 className="text-1xl font-bold text-gray-900">
+          <div key={singleFaq.id} className="mb-2">
+            <hr />{" "}
+            <div className="flex justify-between items-center">
+              <h2 className="text-1xl font-bold text-gray-900 hover:text-red-600 hover:cursor-pointer">
                 {singleFaq.question}
               </h2>
-              <span>
-                <ExpandButton />
-              </span>
+              <ExpandButton />
             </div>
-            <p>{singleFaq.answer}</p>
+            <p className="text-gray-800">{singleFaq.answer}</p>
           </div>
         );
       })}
