@@ -1,5 +1,3 @@
-import React from "react";
-
 import iconStar from "../assets/images/icon-star.svg";
 
 const FaqHeader = () => {

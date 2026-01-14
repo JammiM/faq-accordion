@@ -1,6 +1,4 @@
-import React from "react";
 import iconExpand from "../assets/images/icon-plus.svg";
-import iconMinus from "../assets/images/icon-minus.svg";
 
 const ExpandButton = () => {
   return (

@@ -1,5 +1,3 @@
-import React from "react";
-
 import faqsObject from "../questionsAndAnswers.json";
 import ExpandButton from "./ExpandButton";
 
