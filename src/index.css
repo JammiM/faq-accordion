@@ -4,14 +4,6 @@
   --color-s-g-purple-100: hsl(275, 100%, 97%);
 }
 
-body {
-  background-color: var(--color-s-g-purple-100);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
