@@ -1,7 +1,24 @@
 @import "tailwindcss";
 
 @theme {
-  --color-s-g-purple-100: hsl(275, 100%, 97%);
+  --color-faq-white: hsl(0, 100%, 100%);
+  --color-faq-purple-100: hsl(275, 100%, 97%);
+  --color-faq-purple-600: hsl(292, 16%, 49%);
+  --color-faq-purple-950: hsl(292, 42%, 14%);
+
+  --fs: 1em;
+
+  --ff-base: "Work Sans", sans-serif;
+
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+}
+
+@layer base {
+  body {
+    font-family: var(--ff-base);
+  }
 }
 
 /* :root {

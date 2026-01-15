@@ -1,4 +1,3 @@
-import "./App.css";
 import FaqHeader from "./components/FaqHeader";
 import FaqAccordion from "./components/FaqAccordion";
 
