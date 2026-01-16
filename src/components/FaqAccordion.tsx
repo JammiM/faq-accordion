@@ -3,7 +3,7 @@ import ExpandButton from "./ExpandButton";
 
 const FaqAccordion = () => {
   return (
-    <section>
+    <section className="pt-5 px-[10px]">
       {faqsObject.map((singleFaq) => {
         return (
           <div key={singleFaq.id} className="mb-2">
