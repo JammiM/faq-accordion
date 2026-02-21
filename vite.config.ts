@@ -5,6 +5,6 @@ import svgrPlugin from "vite-plugin-svgr";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "",
+  base: "/faq-accordion",
   plugins: [tailwindcss(), react(), svgrPlugin()],
 });
