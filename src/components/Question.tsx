@@ -16,7 +16,7 @@ const Question = ({ question, answer, isActive }: Props) => {
     <div className="mb-2">
       <hr />{" "}
       <div className="flex justify-between items-center">
-        <h2 className="text-1xl font-bold text-gray-900 hover:text-red-600 hover:cursor-pointer">
+        <h2 className="text-1xl font-bold text-gray-900 hover:text-faq-highlight hover:cursor-pointer">
           {question}
         </h2>
 
