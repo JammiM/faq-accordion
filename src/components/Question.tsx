@@ -9,7 +9,7 @@ interface Props {
   isActive: boolean;
 }
 
-const Question = ({ id, question, answer, isActive }: Props) => {
+const Question = ({ question, answer, isActive }: Props) => {
   const [faqAnswer, showAnswer] = useState(isActive);
 
   return (
