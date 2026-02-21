@@ -1,22 +1,11 @@
 import faqsObject from "../questionsAndAnswers.json";
-import ExpandButton from "./ExpandButton";
+import Question from "./Question";
 
 const FaqAccordion = () => {
   return (
     <section className="pt-5 px-[10px]">
       {faqsObject.map((singleFaq) => {
-        return (
-          <div key={singleFaq.id} className="mb-2">
-            <hr />{" "}
-            <div className="flex justify-between items-center">
-              <h2 className="text-1xl font-bold text-gray-900 hover:text-red-600 hover:cursor-pointer">
-                {singleFaq.question}
-              </h2>
-              <ExpandButton />
-            </div>
-            <p className="text-gray-800">{singleFaq.answer}</p>
-          </div>
-        );
+        return <Question key={singleFaq.id} {...singleFaq} />;
       })}
     </section>
   );
