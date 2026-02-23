@@ -1,15 +1,10 @@
-import iconStar from "../assets/images/icon-star.svg";
+import IconStar from "../assets/images/icon-star.svg?react";
 
 const FaqHeader = () => {
   return (
-    <header className="flex justify-start items-center pt-10 px-[30px]">
-      <img
-        className=""
-        src={iconStar}
-        alt="Frequently asked questions"
-        srcSet={iconStar}
-      />
-      <h1 className="text-6xl font-bold text-gray-900">FAQs</h1>
+    <header className="flex justify-start  items-center gap-x-3   pt-10 px-[10px]">
+      <IconStar />
+      <h1 className="text-6xl font-bold text-gray-900 pl-3 ">FAQs</h1>
     </header>
   );
 };
