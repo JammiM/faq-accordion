@@ -17,7 +17,11 @@ const Question = ({ question, answer, isActive }: Props) => {
 			<div className="flex items-center justify-between">
 				<h2 className="text-1xl hover:text-faq-highlight font-bold text-gray-900 hover:cursor-pointer">{question}</h2>
 
-				<button onClick={() => showAnswer(!faqAnswer)} aria-label={faqAnswer ? 'Hide Answer' : 'Display Answer'}>
+				<button
+					type="button"
+					onClick={() => showAnswer(!faqAnswer)}
+					aria-label={faqAnswer ? 'Hide Answer' : 'Display Answer'}
+				>
 					{faqAnswer ? <IconMinus /> : <IconExpand />}
 				</button>
 			</div>
