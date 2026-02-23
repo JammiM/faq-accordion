@@ -14,14 +14,10 @@ const Question = ({ question, answer, isActive }: Props) => {
 
 	return (
 		<div className="single-question border-b-faq-purple-100 mb-2 border-b-[1px] pt-2 pb-6">
-			<div className="flex items-center justify-between">
-				<h2 className="text-1xl hover:text-faq-highlight font-bold text-gray-900 hover:cursor-pointer">{question}</h2>
+			<div className="flex items-center justify-between hover:cursor-pointer" onClick={() => showAnswer(!faqAnswer)}>
+				<h2 className="text-1xl hover:text-faq-highlight font-bold text-gray-900">{question}</h2>
 
-				<button
-					type="button"
-					onClick={() => showAnswer(!faqAnswer)}
-					aria-label={faqAnswer ? 'Hide Answer' : 'Display Answer'}
-				>
+				<button aria-label={faqAnswer ? 'Hide Answer' : 'Display Answer'} className="hover:cursor-pointer">
 					{faqAnswer ? <IconMinus /> : <IconExpand />}
 				</button>
 			</div>
