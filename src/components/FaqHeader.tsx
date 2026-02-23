@@ -2,9 +2,9 @@ import IconStar from '../assets/images/icon-star.svg?react';
 
 const FaqHeader = () => {
 	return (
-		<header className="flex justify-start items-center gap-x-3 pt-10 px-[10px]">
+		<header className="flex items-center justify-start gap-x-3 px-[10px] pt-10">
 			<IconStar />
-			<h1 className="text-6xl font-bold text-gray-900 pl-3">FAQs</h1>
+			<h1 className="pl-3 text-6xl font-bold text-gray-900">FAQs</h1>
 		</header>
 	);
 };

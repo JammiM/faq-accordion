@@ -3,7 +3,7 @@ import Question from './Question';
 
 const FaqAccordion = () => {
 	return (
-		<section className="pt-5 px-[10px]">
+		<section className="px-[10px] pt-5">
 			{faqsObject.map((singleFaq) => {
 				return <Question key={singleFaq.id} {...singleFaq} />;
 			})}
