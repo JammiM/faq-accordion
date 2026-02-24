@@ -38,4 +38,17 @@
 	.single-question:last-child {
 		border-bottom: none;
 	}
+
+	.fadeIn {
+		animation: fadeInAnimation 0.5s;
+	}
+
+	@keyframes fadeInAnimation {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
 }

@@ -21,7 +21,7 @@ const Question = ({ question, answer, isActive }: Props) => {
 					{faqAnswer ? <IconMinus /> : <IconExpand />}
 				</button>
 			</div>
-			{faqAnswer ? <p className="text-faq-purple-600 pt-4">{answer}</p> : ''}
+			{faqAnswer ? <p className="text-faq-purple-600 fadeIn pt-4">{answer}</p> : ''}
 		</div>
 	);
 };
