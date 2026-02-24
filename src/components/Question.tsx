@@ -12,9 +12,13 @@ interface Props {
 const Question = ({ question, answer, isActive }: Props) => {
 	const [faqAnswer, showAnswer] = useState(isActive);
 
+	function handleQuestionClick() {
+		showAnswer(!faqAnswer);
+	}
+
 	return (
 		<div className="single-question border-b-faq-purple-100 mb-2 pt-2 pb-6">
-			<div className="flex items-center justify-between hover:cursor-pointer" onClick={() => showAnswer(!faqAnswer)}>
+			<div className="flex items-center justify-between hover:cursor-pointer" onClick={handleQuestionClick}>
 				<h2 className="text-1xl hover:text-faq-highlight font-bold text-gray-900">{question}</h2>
 
 				<button aria-label={faqAnswer ? 'Hide Answer' : 'Display Answer'} className="hover:cursor-pointer">
