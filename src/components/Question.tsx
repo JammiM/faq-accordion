@@ -18,27 +18,27 @@ const Question = ({ id, question, answer, isActive }: Props) => {
 
 	return (
 		<div className="single-question border-b-faq-purple-100 mb-2 pt-2 pb-6">
-			<div
-				className="flex items-center justify-between hover:cursor-pointer"
-				aria-expanded={faqAnswer}
-				aria-controls={`section-#${id.toString()}`}
-				id={`accordion-#${id.toString()}`}
-				onClick={handleQuestionClick}
-			>
-				<h2 className="text-1xl hover:text-faq-highlight font-bold text-gray-900">{question}</h2>
-
-				<button aria-label={faqAnswer ? 'Hide Answer' : 'Display Answer'} className="hover:cursor-pointer">
-					{faqAnswer ? <IconMinus /> : <IconExpand />}
-				</button>
+			<div className="flex items-center justify-between hover:cursor-pointer" onClick={handleQuestionClick}>
+				<h2 className="text-1xl hover:text-faq-highlight font-bold text-gray-900 hover:cursor-pointer">
+					<button
+						type="button"
+						aria-expanded={faqAnswer}
+						className="text-left"
+						aria-controls={`section-#${id.toString()}`}
+						id={`accordion-#${id.toString()}`}
+					>
+						{question}
+					</button>
+				</h2>
+				{faqAnswer ? <IconMinus /> : <IconExpand />}
 			</div>
 
 			{faqAnswer ? (
 				<p
-					id={`section-#${id.toString()}`}
 					className="text-faq-purple-600 fadeIn pt-4"
+					id={`section-#${id.toString()}`}
 					role="region"
 					aria-labelledby={`accordion-#${id.toString()}`}
-					aria-hidden={!faqAnswer}
 				>
 					{answer}
 				</p>
