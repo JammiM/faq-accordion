@@ -13,7 +13,7 @@ const Question = ({ question, answer, isActive }: Props) => {
 	const [faqAnswer, showAnswer] = useState(isActive);
 
 	return (
-		<div className="single-question border-b-faq-purple-100 mb-2 border-b-[1px] pt-2 pb-6">
+		<div className="single-question border-b-faq-purple-100 mb-2 pt-2 pb-6">
 			<div className="flex items-center justify-between hover:cursor-pointer" onClick={() => showAnswer(!faqAnswer)}>
 				<h2 className="text-1xl hover:text-faq-highlight font-bold text-gray-900">{question}</h2>
 

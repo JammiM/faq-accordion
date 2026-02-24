@@ -27,8 +27,15 @@
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 	}
+}
 
-	.single-question:nth-last-child(-n + 1) {
-		border-bottom-width: 0;
+@layer utilities {
+	.single-question {
+		border-bottom-style: var(--tw-border-style);
+		border-bottom-width: 1px;
+	}
+
+	.single-question:last-child {
+		border-bottom: none;
 	}
 }
