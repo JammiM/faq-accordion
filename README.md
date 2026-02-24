@@ -1,7 +1,6 @@
 # Frontend Mentor - FAQ accordion solution
 
-This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz). 
-
+This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz).
 
 [![Deploy static content to Pages](https://github.com/JammiM/faq-accordion/actions/workflows/main.yml/badge.svg)](https://github.com/JammiM/faq-accordion/actions/workflows/main.yml)
 
@@ -53,7 +52,7 @@ Users should be able to:
 
 ### Continued development
 
-I want to improve my knowledge of Tailwind and a better CI / CD pipeline.
+- Create a seperate component for the Answers, because the Question Component has expanded quite a lot.
 
 ### Useful resources
 
